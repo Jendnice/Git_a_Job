@@ -9,8 +9,3 @@ end
 #   -has many company_interests -- NO foreign key 
 #   -username, password 
 
-
-# sophie = Owner.create(name: "Sophie")
-# maru = Cat.new(name: "Maru", age: 3, breed: "Scottish Fold")
-# maru.owner = sophie
-# maru.save
