@@ -1,5 +1,12 @@
 class CompanyInterestsController < ApplicationController 
   
+  get '/company_interests' do 
+    # can def error message in ApplicationController and call on that method here, which would then redirect user if not logged in
+    
+    # Put above error message method here
+    @companies = CompanyInterest.all 
+    erb :"/company_interests/index"
+  end 
   
 end 
 

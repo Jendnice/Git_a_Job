@@ -1,20 +1,47 @@
 class UsersController < ApplicationController 
   
   get "/signup" do
-    # Will probably want to redirect them to the "users/new" if they're not a current user, or their personal index page ("/company_interests") if they are a current user. 
-    # /company_interests would then be defined in the company_interests controller and utilize erb :'/company_interests/index'
-    # Could then def error message in ApplicationController and call on that method at the beginning of this route in company_interests controller, which would then redirect user if not logged in
-    erb :signup
+    if !session[:user_id]
+      erb :'users/new'
+    else 
+      redirect to '/company_interests'
+    end 
   end
-
+  
   post "/signup" do
     user = User.new(:username => params[:username], :password => params[:password])
-    if user.username != "" && user.save 
-      redirect '/login'
+    if user.username != "" && user.save
+      session[:user_id] = @user.id
+      redirect '/company_interests'
     else 
-      # "/failure" below refers to views file for this example. (In Secure Password lab.)
-      # Probably best to show error messages another way. See "Video Review: Authentication" and golf example.
-      redirect '/failure' 
+      # Could update redirect to show error message below. (As part of signup form or separate?) See "Video Review: Authentication" and golf example.
+      redirect to '/signup' 
+    end
+  end
+  
+  get '/users/:id' do
+    if !logged_in
+      redirect to "/login"
+    end 
+    @user = User.find(params[:id])
+      if !@user.nil? && @user == current_user
+        erb :"users/show"
+      else 
+        redirect "/company_interests"
+      end 
+  end
+
+  get "/login" do
+    erb :login
+  end
+
+  post "/login" do
+    user = User.find_by(:username => params[:username])
+    if user && user.authenticate(params[:password])
+		  session[:user_id] = user.id 
+      redirect '/account'
+    else 
+      redirect '/failure'
     end
   end
   
