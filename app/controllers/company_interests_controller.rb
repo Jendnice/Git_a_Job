@@ -1,0 +1,4 @@
+class CompanyInterestsController < ApplicationController 
+  
+  
+end 

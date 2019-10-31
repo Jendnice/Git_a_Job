@@ -14,11 +14,11 @@ Models:
 
 Controllers:
    -ApplicationController
-   -ComapnyInterestsController 
+   -CompanyInterestsController 
    -UsersController 
 
 Views:
-    -Company-Interests
+    -Company_Interests
        -index, show, edit, new 
     -Users 
        -login, new, show (?)
