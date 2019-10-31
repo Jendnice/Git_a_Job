@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     if !session[:user_id]
       erb :'users/new'
     else 
-      redirect to '/company_interests'
+      redirect to '/login'
     end 
   end
   
@@ -25,23 +25,40 @@ class UsersController < ApplicationController
     end 
     @user = User.find(params[:id])
       if !@user.nil? && @user == current_user
-        erb :"users/show"
+        erb :"company_interests/show"
       else 
         redirect "/company_interests"
       end 
   end
 
   get "/login" do
-    erb :login
+    # # error_message will likely need to be defined in the views file relevant to this. ("users/login"?)
+    # @error_message = params[:error]
+    # if !session[:user_id]
+    #   erb :"users/login" 
+    # else 
+    #   redirect "/signup" or redirect "/company_interes" (?)
+    # end 
+    
+    erb :login 
   end
 
   post "/login" do
     user = User.find_by(:username => params[:username])
     if user && user.authenticate(params[:password])
 		  session[:user_id] = user.id 
-      redirect '/account'
+      redirect '/company_interests'
     else 
-      redirect '/failure'
+      redirect to '/signup'
+    end
+  end
+  
+  get "/logout" do 
+    if session[:user_id] != nil
+      session.clear
+      redirect to '/login'
+    else
+      redirect to '/'
     end
   end
   
