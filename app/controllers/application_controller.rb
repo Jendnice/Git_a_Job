@@ -12,5 +12,18 @@ class ApplicationController < Sinatra::Base
   get "/" do
     erb :welcome_placeholder  
   end
+  
+  helpers do
+    def logged_in?
+      !!session[:user_id]
+    end
+
+    def current_user
+      User.find(session[:user_id])
+    end
+  end
 
 end
+
+  # main controller framework 
+  # helper methods
