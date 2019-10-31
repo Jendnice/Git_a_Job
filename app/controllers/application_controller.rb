@@ -14,13 +14,13 @@ class ApplicationController < Sinatra::Base
   end
   
   helpers do
-    
-    # Error Message example to work on later:
-      # def redirect_if_not_logged_in
-      #   if !logged_in?
-      #     redirect "/login?error=You have to be logged in to do that"
-      #   end
-      # end
+  
+           def redirect_if_not_logged_in
+              if !logged_in?
+                ## UPDATE REDIRECT BELOW. CURRENTLY PUTS THAT WORDING INTO URL BUT SINATRA DOESN'T KNOW THAT DITTY/PAGE. ##
+               redirect "/login?error=You have to be logged in to do that"
+              end
+           end
     
     def logged_in?
       !!session[:user_id]

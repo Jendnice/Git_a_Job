@@ -1,3 +1,10 @@
-Overall Company_Interests index (just names in ordered list of companies)
+<!--Overall Company_Interests index (just names in ordered list of companies)-->
+
+<% @user.company_interests.each do |company| %>
+  <%= company.name %><br />
+  <a href="/company_interests/<%=company.id%>/edit">Edit</a>
+  <br />
+  <br />
+<% end %>
 
 <p><a href="/users/logout">Log Out</a></p>

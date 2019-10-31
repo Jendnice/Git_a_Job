@@ -1,3 +1,11 @@
 Show an individual company with with name and description. (Can add other details (location, etc.) if you want but would need to add them to the company_interests database as new columns, too.)
 
+<h1>Hi, <%=@user.name%></h1>
+<h4>Pets:</h4>
+<ul>
+  <%@owner.pets.each do |pet|%>
+  <li><%=pet.name%></li>
+  <%end%>
+</ul>
+
 <p><a href="/users/logout">Log Out</a></p>

@@ -1,36 +1,36 @@
 class CompanyInterestsController < ApplicationController 
   
   get '/company_interests' do 
-    # can def error message in ApplicationController and call on that method here, which would then redirect user if not logged in
-    
-    # Put above redirect method (to error message) here
-    @companies = CompanyInterest.all 
+     redirect_if_not_logged_in
+     
+    @user = current_user 
+   
     erb :"/company_interests/index"
   end 
   
   get "/company_interests/new" do 
-    # add redirect method (to error message) here 
+     redirect_if_not_logged_in
+     
     # error_message = params[:error]
     
     erb :"/company_interests/new"
   end 
   
   post "/company_interests" do 
-    ##  add redirect method (to error message) here 
-    # unless CompanyInterest.valid_params?(params)
-    #  redirect "/company_interests/new?error=invalid company_interest"
-    # end
+     redirect_if_not_logged_in
+     
+        # unless CompanyInterest.valid_params?(params)
+        #  redirect "/company_interests/new?error=invalid company_interest"
+        # end
     
-    
-    # add redirect method (to error message) here 
     CompanyInterest.create(params)
     redirect to "/company_interests/#{@company_interest.id}"
   end 
   
   get "/company_interests/:id/edit" do 
-    # add redirect method (to error message) here
-    # @error_message = params[:error]
+    redirect_if_not_logged_in
     
+    # @error_message = params[:error]
     
     @company = CompanyInterest.find(params[:id])
      #if you have trouble with this one, or any others with find(params[:id]), try find_by_id(params[:id]) or look at Sinatra Complex Forms Associations for additional info. 
@@ -39,14 +39,14 @@ class CompanyInterestsController < ApplicationController
   end 
   
   get "/company_interests/:id" do 
-    # add redirect method (to error message) here 
+    redirect_if_not_logged_in
     
     @company = CompanyInterest.find(params[:id])
     erb :"/company_interests/show"
   end 
   
   patch "/company_interests/:id" do 
-    # add redirect method (to error message) here 
+    redirect_if_not_logged_in
     
     @company = CompanyInterest.find(params[:id])
         # unless CompanyInterest.valid_params?(params)
