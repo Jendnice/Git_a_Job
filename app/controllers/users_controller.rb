@@ -1,37 +1,29 @@
 class UsersController < ApplicationController 
   
-  get "/signup" do
+  get "/users" do 
+    "hello world"
+  end 
+
+  get "/users/signup" do
     if !session[:user_id]
       erb :'users/new'
     else 
-      redirect to '/login'
+      redirect to '/users/login'
     end 
   end
   
-  post "/signup" do
+  post "/users/signup" do
     user = User.new(:username => params[:username], :password => params[:password])
     if user.username != "" && user.save
       session[:user_id] = @user.id
       redirect '/company_interests'
     else 
       # Could update redirect to show error message below. (As part of signup form or separate?) See "Video Review: Authentication" and golf example.
-      redirect to '/signup' 
+      redirect to '/users/signup' 
     end
   end
-  
-  get '/users/:id' do
-    if !logged_in
-      redirect to "/login"
-    end 
-    @user = User.find(params[:id])
-      if !@user.nil? && @user == current_user
-        erb :"company_interests/show"
-      else 
-        redirect "/company_interests"
-      end 
-  end
 
-  get "/login" do
+  get "/users/login" do
     # # error_message will likely need to be defined in the views file relevant to this. ("users/login"?)
     # @error_message = params[:error]
     # if !session[:user_id]
@@ -40,23 +32,35 @@ class UsersController < ApplicationController
     #   redirect "/signup" or redirect "/company_interes" (?)
     # end 
     
-    erb :login 
+    erb :"/users/login" 
   end
 
-  post "/login" do
+  post "/users/login" do
     user = User.find_by(:username => params[:username])
     if user && user.authenticate(params[:password])
 		  session[:user_id] = user.id 
       redirect '/company_interests'
     else 
-      redirect to '/signup'
+      redirect to '/users/signup'
     end
   end
   
-  get "/logout" do 
+   get '/users/:id' do
+    if !logged_in?
+      redirect to "/users/login"
+    end 
+    @user = User.find(params[:id])
+      if !@user.nil? && @user == current_user
+        erb :"company_interests/show"
+      else 
+        redirect "/company_interests"
+      end 
+  end
+  
+  get "/users/logout" do 
     if session[:user_id] != nil
       session.clear
-      redirect to '/login'
+      redirect to '/users/login'
     else
       redirect to '/'
     end
