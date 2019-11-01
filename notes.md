@@ -42,6 +42,9 @@ TO DOs:
       -this might be built in as part of building out company_interests and show erbs. (It will pull directly from the user, so only the actual use will see the actual content.)
   -need to add something to encrypt passwords when they're entered in login and signup page so that it doesn't just show the letters as they type them
   -add delete/destroy to company_interests controller (make it possible for user to delete a company_interest)
+  -add general links to bottom of pages where user is logged in so they can navigate around (logout, companies, etc.) Right now they get kind of stuck if they choose one path.
+  -Make sure edit company doesn't save the edits as a new company, but instead replaces the old one 
 
+** LEFT OFF WITH ERROR WHEN CREATING NEW COMPANY IN SHOTGUN - NEED TO UPDATE THE "company_interest" attribute in that view. **
   
   
