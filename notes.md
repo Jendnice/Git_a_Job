@@ -34,7 +34,7 @@ TO DOs:
   6. Additional features based on instructions
   7. Bonus - error messages 
   8. Additional bonus:
-       a. more advanced formatting (putting companies in index in a list; updating heading tags, line breaks, etc.; more advanced or different options for submitting; updating the layout and color scheme)
+       a. more advanced formatting (putting companies in index in a list; updating heading tags, line breaks, etc.; more advanced or different options for submitting; updating the layout and color scheme, change description to "text" instead of "string", add timestamps to your databases)
        b. add in more options for companies (company url, location, applied - Y/N, notes, etc.)
        c. maybe add log-out to additional pages?
   
