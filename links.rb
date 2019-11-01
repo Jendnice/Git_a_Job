@@ -8,5 +8,7 @@
 
 <a href="/company_interests/new">Add New Company</a>        # Add new company 
 
+<a href="/users/login">Login</a>   # Login 
 
+<a href="/users/signup">Sign Up</a>     # Sign up
 
