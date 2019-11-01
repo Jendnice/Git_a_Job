@@ -10,15 +10,21 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-    erb :welcome_placeholder  
+    erb :welcome_placeholder 
+  end
+  
+  get "/failure" do
+    erb :failure  
   end
   
   helpers do
   
            def redirect_if_not_logged_in
               if !logged_in?
-                ## UPDATE REDIRECT BELOW. CURRENTLY PUTS THAT WORDING INTO URL BUT SINATRA DOESN'T KNOW THAT DITTY/PAGE. ##
-               redirect "/login?error=You have to be logged in to do that"
+                ## UPDATE REDIRECT BELOW. 
+                     # BELOW COMMENT PUTS THAT WORDING INTO URL BUT SINATRA DOESN'T KNOW THAT DITTY/PAGE. #
+                     # redirect "/login?error=You have to be logged in to do that"
+               redirect "/failure"
               end
            end
     
