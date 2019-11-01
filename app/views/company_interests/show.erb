@@ -4,12 +4,17 @@
   <br>
   <h3><%=@company.description%></h3>
   <br>
+  <a href="/company_interests/<%=@company.id%>/edit">Edit</a>
   <br>
-  <h4>Would you like to delete this company?</h4>
+  <br>
+  <a href="/company_interests">Company List</a>
+  <br>
+  <br>
+  <label>Would you like to delete this company?</label>
 <form method="POST" action="/company_interests/<%=@company.id%>">
   <input type="hidden" id="hidden" name="_method" value="DELETE" />
   <input type="submit" value="Delete" />
 </form>
-
+<br>
 <p><a href="/users/logout">Log Out</a></p>
 

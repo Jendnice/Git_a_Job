@@ -6,8 +6,10 @@
 <br>
 <ul>
 <% @user.company_interests.each do |company| %>
-  <li><%= company.name %> - <a href="/company_interests/<%=company.id%>/edit">Edit</a> </li>
+  <li><a href="/company_interests/<%=company.id%>"><%= company.name %></a></li>
   <br />
 <% end %>
 </ul>
+<br>
+<br>
 <p><a href="/users/logout">Log Out</a></p>
