@@ -62,6 +62,17 @@ class CompanyInterestsController < ApplicationController
     # if you have trouble with this one, refer to Sinatra Complex Forms for additional options.
   end 
   
+  delete '/company_interests/:id' do
+    @company = CompanyInterest.find_by_id(params[:id])
+     if @company.user == current_user
+        @company.delete
+        redirect "/company_interests"
+    # else
+       # maybe redirect elsewhere below or have it return an error message if they can't delete it 
+        # redirect "/company_interests"
+    # end
+  end
+  
 end 
 
 # Company_Interests should be able to:

@@ -14,9 +14,9 @@ class UsersController < ApplicationController
   end
   
   post "/users/signup" do
-    user = User.new(:username => params[:username], :password => params[:password])
+    user = User.create(params)
     if user.username != "" && user.save
-      session[:user_id] = @user.id
+      session[:user_id] = user.id
       redirect '/company_interests'
     else 
       # Could update redirect to show error message below. (As part of signup form or separate?) See "Video Review: Authentication" and golf example.
