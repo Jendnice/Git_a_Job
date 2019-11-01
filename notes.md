@@ -39,12 +39,10 @@ TO DOs:
        c. maybe add log-out to additional pages?
   
   
-  -add delete/destroy to company_interests controller (make it possible for user to delete a company_interest)
-  -work on editing a company. Changes don't seem to be saved and populated through.
+  -work on editing a company. Changes don't seem to be saved and populated through. And make sure edit company doesn't save the edits as a new company, but instead replaces the old one.
   -change index so user can click directly on each company for add'l info (can replace "Edit" with this per company and then add edits onto individual company pages with delete, etc. Or can have link to click or edit on index page and delete on individual company page.)
   -update company_listings/:id so it only shows current user his/her own companies. Currently another user can index directly into someone else's companies. Rehashed line of delete route to prevent them from deleting. But when you're updating this, check and make sure another user can't access, read, edit, or delete another user's companies.
   -add general links to bottom of pages where user is logged in so they can navigate around (logout, companies, "create new" on main page, etc.) Right now they get kind of stuck if they choose one path.
-  -Make sure edit company doesn't save the edits as a new company, but instead replaces the old one 
   -need to update error for any time a user is checked as logged in and not (company_interests, company_interests/id, company_interests/new)
   -update user routes so they don't need "users" in the url ("/login" vs. "/users/login"). Remember you'd have to update the route and the forms. Might not be worth it. Think about it. 
   -some way for a personalized error to pop up when an id that's not found is entered as opposed to the error page that pops up spelling out the error (the AR one comes up currently, not the sinatra one)
