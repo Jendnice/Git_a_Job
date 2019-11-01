@@ -1,6 +1,7 @@
 class UsersController < ApplicationController 
   
   get "/users" do 
+    # CHANGE THIS WHEN ALL SET
     "hello world"
   end 
 

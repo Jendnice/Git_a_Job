@@ -23,8 +23,13 @@ class CompanyInterestsController < ApplicationController
         #  redirect "/company_interests/new?error=invalid company_interest"
         # end
     
-    CompanyInterest.create(params)
-    redirect to "/company_interests/#{@company_interest.id}"
+    new_company = CompanyInterest.create(params[:company_interest])
+      # left the below 2 here just in case the params info isn't going through, but should work as is
+        # new_company.name = params[:company_interest][:name]
+        # new_company.description = params[:company_interest][:description]
+    new_company.user = current_user 
+    new_company.save
+    redirect to "/company_interests/#{new_company.id}"
   end 
   
   get "/company_interests/:id/edit" do 

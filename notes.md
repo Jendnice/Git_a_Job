@@ -38,13 +38,12 @@ TO DOs:
        b. add in more options for companies (company url, location, applied - Y/N, notes, etc.)
        c. maybe add log-out to additional pages?
   
-  -need to add something to ensure users have to be logged in to see company_interests and show pages. That they can't just type in "company_interests" and go directly to the page.
-      -this might be built in as part of building out company_interests and show erbs. (It will pull directly from the user, so only the actual use will see the actual content.)
   -need to add something to encrypt passwords when they're entered in login and signup page so that it doesn't just show the letters as they type them
   -add delete/destroy to company_interests controller (make it possible for user to delete a company_interest)
   -add general links to bottom of pages where user is logged in so they can navigate around (logout, companies, etc.) Right now they get kind of stuck if they choose one path.
   -Make sure edit company doesn't save the edits as a new company, but instead replaces the old one 
+  -need to update error for any time a user is checked as logged in and not (company_interests, company_interests/id, company_interests/new)
+ 
 
-** LEFT OFF WITH ERROR WHEN CREATING NEW COMPANY IN SHOTGUN - NEED TO UPDATE THE "company_interest" attribute in that view. **
   
   
