@@ -33,9 +33,15 @@ TO DOs:
   5. CRUD actions (only when verified user and for his/her items only)
   6. Additional features based on instructions
   7. Bonus - error messages 
+  8. Additional bonus:
+       a. more advanced formatting (putting companies in index in a list; updating heading tags, line breaks, etc.; more advanced or different options for submitting; updating the layout and color scheme)
+       b. add in more options for companies (company url, location, applied - Y/N, notes, etc.)
+       c. maybe add log-out to additional pages?
   
   -need to add something to ensure users have to be logged in to see company_interests and show pages. That they can't just type in "company_interests" and go directly to the page.
       -this might be built in as part of building out company_interests and show erbs. (It will pull directly from the user, so only the actual use will see the actual content.)
   -need to add something to encrypt passwords when they're entered in login and signup page so that it doesn't just show the letters as they type them
+  -add delete/destroy to company_interests controller (make it possible for user to delete a company_interest)
+
   
   
