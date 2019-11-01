@@ -57,11 +57,16 @@ class CompanyInterestsController < ApplicationController
         # unless CompanyInterest.valid_params?(params)
         #   redirect "/company_interests/#{@company.id}/edit?error=invalid company interest"
         # end 
-    
-    @company.name = params[:company_interest][:name]
-    @company.description = params[:company_interest][:description]
-    @company.save
-    redirect to "/company_interests/#{@company.id}"
+        
+    if @company.user == current_user
+       @company.name = params[:company_interest][:name]
+       @company.description = params[:company_interest][:description]
+       @company.save
+       redirect to "/company_interests/#{@company.id}"
+    else 
+      # maybe redirect elsewhere below or have it return an error message if they can't delete it 
+         redirect "/company_interests"
+    end 
     # if you have trouble with this one, refer to Sinatra Complex Forms for additional options.
   end 
   
