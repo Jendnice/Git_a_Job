@@ -27,9 +27,10 @@ Views:
     
 TO DOs:
   1. Blog post ("Models, Controllers, and Views - Oh, My!")
-  2. 30 min video
+  2. 30 min video - ZOOM
   3. Walkthrough video 
 
+  5. HTML and CSS (?)
   6. Bonus - error messages 
   7. Additional bonus:
        a. more advanced formatting (putting companies in index in a list; updating heading tags, line breaks, etc.; more advanced or different options for submitting; updating the layout and color scheme, change description to "text" instead of "string", add timestamps to your databases, format links on the bottom of the page to go horizontal instead of all stacked vertical)
@@ -40,10 +41,13 @@ TO DOs:
   11. See everything else on project page
   
 
-  -update user routes so they don't need "users" in the url ("/login" vs. "/users/login"). Remember you'd have to update the route and the forms. Might not be worth it. Think about it. 
+  -update user routes so they don't need "users" in the url ("/login" vs. "/users/login"). Remember you'd have to update the route and the forms. Might not be worth it. Think about it. Or maybe just update main page to direct as a failsafe.
   -some way for a personalized error to pop up when an id that's not found is entered as opposed to the error page that pops up spelling out the error (the AR one comes up currently, not the sinatra one)
-  -update both welcome/hello world placeholders (one in application controller and one in users controller)
+  -update both welcome/hello world placeholders (one in application controller and one in users controller) Check redirects to make sure you don't leave any behind if you delete them. (ex. In users_controller logout, it redirects to "/".)
   -Fix update error for any time a user is checked as logged in and not (company_interests, company_interests/id, company_interests/new). Currently goes to failure.erb file. Is that ok? Maybe work in error gem listed in project page.
+  -Add links to error/failure page so person can try logging in/signing up 
+  -Add links for login option on signup page and signup option on login page (Ex. "Already have an account? <Login here.>")
+  -Maybe make welcome-placeholder the main/home page. Put an opening description and links to sign up or login. Then can have links and redirects connected to it. 
 
  
 
