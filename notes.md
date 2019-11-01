@@ -30,16 +30,14 @@ TO DOs:
   2. 30 min video
   3. Walkthrough video 
 
-  4. Build out each component fully (individual models, controllers, views, etc. - SRP)
-  5. Additional features based on instructions
   6. Bonus - error messages 
   7. Additional bonus:
        a. more advanced formatting (putting companies in index in a list; updating heading tags, line breaks, etc.; more advanced or different options for submitting; updating the layout and color scheme, change description to "text" instead of "string", add timestamps to your databases, format links on the bottom of the page to go horizontal instead of all stacked vertical)
        b. add in more options for companies (company url, location, applied - Y/N, notes, etc.)
-       c. maybe add log-out to additional pages).
-  8. Delete unnecessary files from project (notes, links, corneal welcome, etc.)
-  9. Update spec.md file per instructions on project page 
-  10. See everything else on project page
+  8. Re-read back through every file and delete any unnecessary comments (and refactor and clean up if/as needed)
+  9. Delete unnecessary files from project (notes, links, corneal welcome, etc.)
+  10. Update spec.md file per instructions on project page 
+  11. See everything else on project page
   
 
   -update user routes so they don't need "users" in the url ("/login" vs. "/users/login"). Remember you'd have to update the route and the forms. Might not be worth it. Think about it. 

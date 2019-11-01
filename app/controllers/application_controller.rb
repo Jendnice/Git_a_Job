@@ -23,8 +23,8 @@ class ApplicationController < Sinatra::Base
               if !logged_in?
                 ## UPDATE REDIRECT BELOW. 
                      # BELOW COMMENT PUTS THAT WORDING INTO URL BUT SINATRA DOESN'T KNOW THAT DITTY/PAGE. #
-                     # redirect "/login?error=You have to be logged in to do that"
-               redirect "/failure"
+                    # redirect "/login?error=You have to be logged in to do that"
+                redirect "/failure"
               end
            end
     

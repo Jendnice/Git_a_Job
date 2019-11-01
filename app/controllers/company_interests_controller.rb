@@ -10,7 +10,6 @@ class CompanyInterestsController < ApplicationController
   
   get "/company_interests/new" do 
      redirect_if_not_logged_in
-     
     # error_message = params[:error]
     
     erb :"/company_interests/new"
