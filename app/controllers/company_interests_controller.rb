@@ -37,17 +37,24 @@ class CompanyInterestsController < ApplicationController
     
     # @error_message = params[:error]
     
-    @company = CompanyInterest.find(params[:id])
-     #if you have trouble with this one, or any others with find(params[:id]), try find_by_id(params[:id]) or look at Sinatra Complex Forms Associations for additional info. 
-     
-    erb :'/company_interests/edit'
+    @company = CompanyInterest.find_by_id(params[:id])
+    if @company.user == current_user
+        erb :'/company_interests/edit'
+    else 
+       redirect to "/company_interests"
+    end 
+     #if you have trouble with this one, or any others with find(params[:id]), try find_by_id(params[:id]) or look at Sinatra Complex Forms Associations for additional info.
   end 
   
   get "/company_interests/:id" do 
     redirect_if_not_logged_in
-    
-    @company = CompanyInterest.find(params[:id])
-    erb :"/company_interests/show"
+  
+    @company = CompanyInterest.find_by_id(params[:id])
+    if @company.user == current_user
+      erb :"/company_interests/show"
+    else 
+      redirect to "/company_interests"
+    end 
   end 
   
   patch "/company_interests/:id" do 
