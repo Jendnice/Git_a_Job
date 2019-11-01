@@ -38,8 +38,7 @@ TO DOs:
        b. add in more options for companies (company url, location, applied - Y/N, notes, etc.)
        c. maybe add log-out to additional pages?
   
-  
-  -work on editing a company. Changes don't seem to be saved and populated through. And make sure edit company doesn't save the edits as a new company, but instead replaces the old one.
+
   -change index so user can click directly on each company for add'l info (can replace "Edit" with this per company and then add edits onto individual company pages with delete, etc. Or can have link to click or edit on index page and delete on individual company page.)
   -update company_listings/:id so it only shows current user his/her own companies. Currently another user can index directly into someone else's companies. Rehashed line of delete route to prevent them from deleting. But when you're updating this, check and make sure another user can't access, read, edit, or delete another user's companies.
   -add general links to bottom of pages where user is logged in so they can navigate around (logout, companies, "create new" on main page, etc.) Right now they get kind of stuck if they choose one path.

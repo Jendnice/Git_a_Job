@@ -52,12 +52,15 @@ class CompanyInterestsController < ApplicationController
   
   patch "/company_interests/:id" do 
     redirect_if_not_logged_in
-    
     @company = CompanyInterest.find(params[:id])
+    
         # unless CompanyInterest.valid_params?(params)
         #   redirect "/company_interests/#{@company.id}/edit?error=invalid company interest"
         # end 
-    @company.update(params.select{|k| k == "name" || k == "description"})
+    
+    @company.name = params[:company_interest][:name]
+    @company.description = params[:company_interest][:description]
+    @company.save
     redirect to "/company_interests/#{@company.id}"
     # if you have trouble with this one, refer to Sinatra Complex Forms for additional options.
   end 
@@ -67,10 +70,10 @@ class CompanyInterestsController < ApplicationController
      if @company.user == current_user
         @company.delete
         redirect "/company_interests"
-    # else
+     else
        # maybe redirect elsewhere below or have it return an error message if they can't delete it 
-        # redirect "/company_interests"
-    # end
+         redirect "/company_interests"
+     end
   end
   
 end 
