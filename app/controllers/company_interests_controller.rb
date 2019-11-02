@@ -47,7 +47,6 @@ class CompanyInterestsController < ApplicationController
   
   get "/company_interests/:id" do 
     redirect_if_not_logged_in
-  
     @company = CompanyInterest.find_by_id(params[:id])
     if @company.user == current_user
       erb :"/company_interests/show"

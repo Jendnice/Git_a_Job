@@ -49,7 +49,7 @@ class UsersController < ApplicationController
       redirect to '/users/login'
     else
       redirect to '/'
-    end
+    end 
   end
   
   get '/users/:id' do

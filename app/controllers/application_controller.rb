@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-    erb :welcome_placeholder 
+    erb :opening_page 
   end
   
   get "/failure" do

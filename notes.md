@@ -48,9 +48,9 @@ TO DOs:
   -Update language and wording as part of updating design. (Opening description, labels for login, signup, etc.) Make it personal.:)
   -Add timestamps to your company_interests db, format links on the bottom of the page to go horizontal instead of all stacked vertical
        b. add in more options for companies (company url, location, applied - Y/N, notes, etc.)
-  -Change company description to "text" instead of "string" - Rake file is ready, just commented out. Decide if you want to do that with the description or if you'd rather break it down another way. (Separate columns added for location, add'l info, etc.) Remember to update elsewhere for any columns you update or add. 
+  -Change company description to "text" instead of "string" - (The prepped but deleted rakefile is in Git. Or can check bookmark for formatting. It'll probably be "change_column" and do with up and down instead of just change, since column change can't be rolled back.) Decide if you want to do that with the description or if you'd rather break it down another way. (Separate columns added for location, add'l info, etc.) Remember to update elsewhere for any columns you update or add. 
   
-  -Continue building out welcome-placeholder as the main/home page. Put an opening description and links to sign up or login. Then can have links and redirects connected to it. (Rename it and update where it's called in application_controller with that name.)
+  -Continue building out welcome-placeholder as the main/home page. Put an opening description. Then can have links and redirects connected to it.
   
   
   Ideal Company listing:
@@ -60,6 +60,13 @@ TO DOs:
      4. Company location/job location 
      5. Applied - Y/N
      6. Notes
+     
+     
+  Code to play with for Y/N on show.erb: 
+  <br>
+  <h2><%= @company.complete ? "Done" : "Not Done" %></h2>
+     
+      
   
 
  
