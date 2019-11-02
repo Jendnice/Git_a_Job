@@ -44,13 +44,15 @@ TO DOs:
   10. Update spec.md file per instructions on project page 
   11. See everything else on project page
   
+  
+  
 
+  -Add small images to other pages through their individual erb files (see opening_page for reference)
   
   -Fix update error for any time a user is checked as logged in and not (company_interests, company_interests/id, company_interests/new). Currently goes to failure.erb file. Is that ok? Maybe work in error gem listed in project page.
   
   -Update design (see above for notes)
       -Update language and wording as part of updating design. (Opening description, labels for login, signup, etc.) Make it personal.:)
-      -Continue building out welcome-placeholder as the main/home page. Put an opening description. Then can have links and redirects connected to it.
       -Maybe update logout so it says goodbye instead of the repeat for login?
   
   -Add timestamps to your company_interests db, format links on the bottom of the page to go horizontal instead of all stacked vertical
