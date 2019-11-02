@@ -78,22 +78,3 @@ end
   # user should be authenticated as part of all CRUD actions (creating, reading, editing, deleting, etc.)
     # CRUD actions can only be carried out on User's content 
     
-    
-    
-    
-  #   get "/company_interests/:id" do 
-  #   redirect_if_not_logged_in
-  #   @company = CompanyInterest.find_by_id(params[:id])
-    
-  #   return !params.empty?
-    
-  #   unless CompanyInterest.valid_params?(params)
-  #     redirect "/company_interests/#{@company.id}/edit?error=invalid company interest"
-  #   end
-    
-  #   if @company.user == current_user
-  #     erb :"/company_interests/show"
-  #   else 
-  #     redirect to "/company_interests"
-  #   end 
-  # end 
