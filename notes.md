@@ -45,11 +45,21 @@ TO DOs:
   -some way for a personalized error to pop up when an id that's not found is entered as opposed to the error page that pops up spelling out the error (the AR one comes up currently, not the sinatra one)
   -Continue updating/finalizing both welcome/hello world placeholders (one in application controller and one in users controller) Check redirects to make sure you don't leave any behind if you delete them. (ex. In users_controller logout, it redirects to "/".)
   -Fix update error for any time a user is checked as logged in and not (company_interests, company_interests/id, company_interests/new). Currently goes to failure.erb file. Is that ok? Maybe work in error gem listed in project page.
+  -Update language and wording as part of updating design. (Opening description, labels for login, signup, etc.) Make it personal.:)
+  -Add timestamps to your company_interests db, format links on the bottom of the page to go horizontal instead of all stacked vertical
+       b. add in more options for companies (company url, location, applied - Y/N, notes, etc.)
+  -Change company description to "text" instead of "string" - Rake file is ready, just commented out. Decide if you want to do that with the description or if you'd rather break it down another way. (Separate columns added for location, add'l info, etc.) Remember to update elsewhere for any columns you update or add. 
   
   -Continue building out welcome-placeholder as the main/home page. Put an opening description and links to sign up or login. Then can have links and redirects connected to it. (Rename it and update where it's called in application_controller with that name.)
-  -Update language and wording as part of updating design. (Opening description, labels for login, signup, etc.) Make it personal.:)
-  -Change company description to "text" instead of "string", add timestamps to your company_interests db, format links on the bottom of the page to go horizontal instead of all stacked vertical
-       b. add in more options for companies (company url, location, applied - Y/N, notes, etc.)
+  
+  
+  Ideal Company listing:
+     1. Company name
+     2. Company description
+     3. Company URL
+     4. Company location/job location 
+     5. Applied - Y/N
+     6. Notes
   
 
  
