@@ -28,8 +28,6 @@ class UsersController < ApplicationController
   end
 
   get "/users/login" do
-    # @error_message = params[:error]
-    
     erb :"/users/login" 
   end
 
