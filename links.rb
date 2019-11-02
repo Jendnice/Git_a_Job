@@ -23,5 +23,7 @@
 
 background-image: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=600");                 # As it's put directly into layout/main.css file. Link to mountains. Looks good big.
 
+https://images.unsplash.com/photo-1511802684173-b35d634c5599?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+
 
 
