@@ -7,8 +7,3 @@ class User < ActiveRecord::Base
   validates :username, presence: true 
     
 end 
-
-# -User
-#   -has many company_interests -- NO foreign key 
-#   -username, password 
-

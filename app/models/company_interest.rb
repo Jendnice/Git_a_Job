@@ -6,7 +6,3 @@ class CompanyInterest < ActiveRecord::Base
   validates :description, presence: true
   
 end 
-
-# -CompanyInterest
-#   -belongs to User -- HAS foreign key
-#   -name, description 
