@@ -26,8 +26,7 @@ Views:
     -Layout 
     
 TO DOs:
-  1. Clean up code (refactor, clean up ruby methods, abstract out if needed, clean up HTML? Esp. spacing at bottom and lining up or correctly staggering breaks and each new line of code.)
-     a. Re-read back through every file and delete any unnecessary comments (and refactor and clean up if/as needed)
+
   2. README
       a. Application (short) Description
       b. Installation Guide
