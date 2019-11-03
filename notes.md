@@ -27,15 +27,15 @@ Views:
     
 TO DOs:
   1. Blog post ("Models, Controllers, and Views - Oh, My!")
-  2. Walkthrough video 
+  2. Walkthrough video (approx. 10 minutes)
+  3. Clean up code (refactor, clean up ruby methods, abstract out if needed, clean up HTML? Esp. spacing at bottom and lining up or correctly staggering breaks and each new line of code.)
+  4. SCHEDULE your project review!
 
-  5. HTML and CSS (?)
   6. README
       a. Application (short) Description
       b. Installation Guide
       c. Contribution Guide
       d. Link to the License for your code/License Statement (link to MIT licensing)
-  6. Bonus - error messages 
   7. Additional bonus:
        a. more advanced formatting (putting companies in index in a list; updating heading tags, line breaks, etc.; more advanced or different options for submitting; updating the layout and color scheme, change description to "text" instead of "string", add timestamps to your databases, format links on the bottom of the page to go horizontal instead of all stacked vertical)
        b. add in more options for companies (company url, location, applied - Y/N, notes, etc.)
@@ -45,15 +45,15 @@ TO DOs:
   11. See everything else on project page
   
   
-  
 
-  -Add small images to other pages through their individual erb files (see opening_page for reference)
+  -Above notes, too! (README, etc.)
   
-  -Maybe center each page's main heading
+  -Figure out how to add "applied" to database. Likey need to add it as a new column. Maybe make it a boolean and then assign the wording to T and F? (Make it a form if not already?) If too complicated, just delete this part from show.erb. (See two bullets below for add'l column ideas.)
   
   -Update design (see above for notes)
       -Update language and wording as part of updating design. (Opening description, labels for login, signup, etc.) Make it personal.:)
       -Maybe update logout so it says goodbye instead of the repeat for login?
+      -Maybe italicize the description area of company pages and tab it in so it stands out a bit?
   
   -Add timestamps to your company_interests db, format links on the bottom of the page to go horizontal instead of all stacked vertical
        b. add in more options for companies (company url, location, applied - Y/N, notes, etc.)

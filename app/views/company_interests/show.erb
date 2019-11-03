@@ -4,11 +4,15 @@
   <img src="https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="float:right;width:375px;height:275px;">
   <h3><%=@company.description%></h3>
   <br>
+  <br>
+  <h4>Applied?</h4>
+  <br>
+&nbsp; &nbsp; <input type="radio" name="application" value="high"> Crushed it!<br>
+<br>
+&nbsp; &nbsp; <input type="radio" name="application" value="medium"> Not yet, but I'm on it asap!<br>
+  <br>
+  <br>
   <a href="/company_interests/<%=@company.id%>/edit">Edit</a>
-  <br>
-  <br>
-  <br>
-  <br>
   <br>
   <br>
   <label>Would you like to delete this company?</label>
