@@ -23,14 +23,11 @@ class ApplicationController < Sinatra::Base
   
   helpers do
   
-           def redirect_if_not_logged_in
-              if !logged_in?
-                ## UPDATE REDIRECT BELOW. 
-                     # BELOW COMMENT PUTS THAT WORDING INTO URL BUT SINATRA DOESN'T KNOW THAT DITTY/PAGE. #
-                    # redirect "/login?error=You have to be logged in to do that"
-                redirect "/failure"
-              end
-           end
+    def redirect_if_not_logged_in
+      if !logged_in?
+        redirect "/failure"
+      end
+    end
     
     def logged_in?
       !!session[:user_id]
@@ -39,10 +36,7 @@ class ApplicationController < Sinatra::Base
     def current_user
       User.find(session[:user_id])
     end
+    
   end
 
 end
-
-  # main controller framework 
-  # helper methods
-  # redirect/error message?

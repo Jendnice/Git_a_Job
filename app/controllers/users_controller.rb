@@ -22,7 +22,6 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect '/company_interests'
     else 
-      # Could update redirect to show error message below. (As part of signup form or separate?) See "Video Review: Authentication" and golf example.
       redirect to '/users/signup' 
     end
   end
@@ -59,11 +58,3 @@ class UsersController < ApplicationController
   end
   
 end 
-
-# Users should be able to:
-  # sign up, login, logout 
-  # CRUD anything that's theirs 
-  # password should be salted and hashed when stored in database
-  # user should be authenticated as part of all CRUD actions (signing in, creating, reading, editing, deleting, etc.)
-    # can only execute CRUD actions on their own content
-    

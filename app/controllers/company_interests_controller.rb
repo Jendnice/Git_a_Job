@@ -22,9 +22,11 @@ class CompanyInterestsController < ApplicationController
   get "/company_interests/:id/edit" do 
     redirect_if_not_logged_in
     @company = CompanyInterest.find_by_id(params[:id])
+    
      unless !(@company == nil)
       redirect "/company_interests"
      end
+     
       if @company.user == current_user
          erb :'/company_interests/edit'
       else 
@@ -35,9 +37,11 @@ class CompanyInterestsController < ApplicationController
   get "/company_interests/:id" do 
     redirect_if_not_logged_in
     @company = CompanyInterest.find_by_id(params[:id])
+    
      unless !(@company == nil)
       redirect "/company_interests"
      end 
+     
       if @company.user == current_user
         erb :"/company_interests/show"
       else 
@@ -48,6 +52,7 @@ class CompanyInterestsController < ApplicationController
   patch "/company_interests/:id" do 
     redirect_if_not_logged_in
     @company = CompanyInterest.find(params[:id])
+    
      if @company.user == current_user
         @company.name = params[:company_interest][:name]
         @company.description = params[:company_interest][:description]
@@ -55,7 +60,6 @@ class CompanyInterestsController < ApplicationController
         @company.save
         redirect to "/company_interests/#{@company.id}"
      else 
-      # maybe redirect elsewhere below or have it return an error message if they can't delete it 
         redirect "/company_interests"
      end 
   end 
@@ -66,16 +70,9 @@ class CompanyInterestsController < ApplicationController
         @company.delete
         redirect "/company_interests"
      else
-       # maybe redirect elsewhere below or have it return an error message if they can't delete it 
          redirect "/company_interests"
      end
   end
   
 end 
-
-# Company_Interests should be able to:
-  # have CRUD actions applied by their User
-  # passwords are salted and hashed 
-  # user should be authenticated as part of all CRUD actions (creating, reading, editing, deleting, etc.)
-    # CRUD actions can only be carried out on User's content 
     
