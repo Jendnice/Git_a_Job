@@ -48,8 +48,6 @@ TO DOs:
   
 
   
-  -Figure out how to add "applied" to database. Likey need to add it as a new column. Maybe make it a boolean and then assign the wording to T and F? (Make it a form if not already?) If too complicated, just delete this part from show.erb. (See bullets further below for add'l column ideas.)
-  
   -Update layout to include message and/or links that you want throughout. (Logout link, etc.) Can then abstract this out from the individual view files so it's held in one place and only shown when user is logged in. (Could do other conditionals here if it makes sense, too. Ex. If logged out, if logged in, etc. Don't get too crazy with it, though!) See Corinna's layout file for how she did it.
   
   -Error messages. See your notes and try to implement based on that. (Might still use failure.erb for some and error messages for others? See how it goes.)
@@ -58,16 +56,12 @@ TO DOs:
   
   -Above notes, too! (README, etc.)
   
-  -Update design (see above for notes)
+  -Update design/formatting (see above for notes)
+      -Check the files you've update and redo some of the formatting (spacing out some stuff, etc.)
       -Update language and wording as part of updating design. (Opening description, labels for login, signup, etc.) Make it personal.:)
       -Maybe update logout so it says goodbye instead of the repeat for login?
       -Maybe italicize the description area of company pages and tab it in so it stands out a bit?
-  
-  -Add timestamps to your company_interests db, format links on the bottom of the page to go horizontal instead of all stacked vertical
-       b. add in more options for companies (company url, location, applied - Y/N, notes, etc.)
        
-  -Change company description to "text" instead of "string" - (The prepped but deleted rakefile is in Git. Or can check bookmark for formatting. It'll probably be "change_column" and do with up and down instead of just change, since column change can't be rolled back.) Decide if you want to do that with the description or if you'd rather break it down another way. (Separate columns added for location, add'l info, etc.) Remember to update elsewhere for any columns you update or add.
-  
   
   
   
@@ -79,10 +73,9 @@ TO DOs:
      5. Applied - Y/N
      6. Notes
      
-     
-  Code to play with for Y/N on show.erb: 
-  <br>
-  <h2><%= @company.complete ? "Done" : "Not Done" %></h2>
+  -Add timestamps to your company_interests db, format links on the bottom of the page to go horizontal instead of all stacked vertical
+       b. add in more options for companies (company url, location, notes, etc.)
+  -Change company description to "text" instead of "string" - (The prepped but deleted rakefile is in Git. Or can check bookmark for formatting. It'll probably be "change_column" and do with up and down instead of just change, since column change can't be rolled back.) Decide if you want to do that with the description or if you'd rather break it down another way. (Separate columns added for location, add'l info, etc.) Remember to update elsewhere for any columns you update or add.
      
       
   
