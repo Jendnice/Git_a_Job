@@ -1,7 +1,7 @@
 class UsersController < ApplicationController 
   
   get "/users" do 
-    if !session[:user_id]
+    if !logged_in?
       redirect to '/'
     else 
       redirect to '/company_interests'
@@ -9,10 +9,10 @@ class UsersController < ApplicationController
   end 
 
   get "/users/signup" do
-    if !session[:user_id]
+    if !logged_in?
       erb :'users/new'
     else 
-      redirect to '/users/login'
+      redirect to '/company_interests'
     end 
   end
   
@@ -27,7 +27,11 @@ class UsersController < ApplicationController
   end
 
   get "/users/login" do
-    erb :"/users/login" 
+    if !logged_in?
+      erb :"/users/login" 
+    else 
+      redirect to '/company_interests'
+    end 
   end
 
   post "/users/login" do
