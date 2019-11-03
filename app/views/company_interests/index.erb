@@ -4,10 +4,19 @@
 <br>
   <img src="https://images.unsplash.com/photo-1511802684173-b35d634c5599?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" style="float:right;width:335px;height:275px;">
 <h2>Here are the companies you're interested in...</h2>
+
+<h4 style="float:right;"><u>Applied?</u> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </h4>
+<br>
 <br>
 <ul>
 <% @user.company_interests.each do |company| %>
-  <li><a href="/company_interests/<%=company.id%>"><%= company.name %></a></li>
+  <li><a href="/company_interests/<%=company.id%>"><%= company.name %></a>
+         <p style="float:right;">  <% if company.applied %>
+      <i> <%= "Yes" %></i>  
+          <% else %>
+      <i><%= "Not yet" %></i>  
+          <% end %> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p> 
+  </li>
   <br />
 <% end %>
 </ul>
@@ -16,5 +25,5 @@
 <br>
 <br>
 <br>
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="/company_interests/new">Add New Company</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="/company_interests">Company List</a> &nbsp; &nbsp;  &nbsp;  &nbsp; <a href="/users/logout">Log Out</a> &nbsp;  &nbsp;  &nbsp; 
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; <a href="/company_interests/new">Add New Company</a> &nbsp; &nbsp;  &nbsp;  &nbsp; <a href="/users/logout">Log Out</a> &nbsp;  &nbsp;  &nbsp; 
 <br>
