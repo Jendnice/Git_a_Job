@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   has_many :company_interests
   
   validates :username, uniqueness: true
+  validates :username, presence: true 
     
 end 
 

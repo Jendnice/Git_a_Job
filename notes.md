@@ -43,12 +43,18 @@ TO DOs:
   9. Delete unnecessary files from project (notes, links, corneal welcome, etc.)
   10. Update spec.md file per instructions on project page 
   11. See everything else on project page
+  12. Add/adjust any other notes from your notebook.
   
   
 
-  -Above notes, too! (README, etc.)
   
-  -Figure out how to add "applied" to database. Likey need to add it as a new column. Maybe make it a boolean and then assign the wording to T and F? (Make it a form if not already?) If too complicated, just delete this part from show.erb. (See two bullets below for add'l column ideas.)
+  -Figure out how to add "applied" to database. Likey need to add it as a new column. Maybe make it a boolean and then assign the wording to T and F? (Make it a form if not already?) If too complicated, just delete this part from show.erb. (See bullets further below for add'l column ideas.)
+  
+  -Update layout to include message and/or links that you want throughout. (Logout link, etc.) Can then abstract this out from the individual view files so it's held in one place and only shown when user is logged in. (Could do other conditionals here if it makes sense, too. Ex. If logged out, if logged in, etc. Don't get too crazy with it, though!) See Corinna's layout file for how she did it.
+  
+  -Error messages. See your notes and try to implement based on that. (Might still use failure.erb for some and error messages for others? See how it goes.)
+  
+  -Above notes, too! (README, etc.)
   
   -Update design (see above for notes)
       -Update language and wording as part of updating design. (Opening description, labels for login, signup, etc.) Make it personal.:)
