@@ -49,6 +49,8 @@ TO DOs:
 
   -Add small images to other pages through their individual erb files (see opening_page for reference)
   
+  -Maybe center each page's main heading
+  
   -Update design (see above for notes)
       -Update language and wording as part of updating design. (Opening description, labels for login, signup, etc.) Make it personal.:)
       -Maybe update logout so it says goodbye instead of the repeat for login?
