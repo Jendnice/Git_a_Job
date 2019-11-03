@@ -9,7 +9,7 @@
 <% @user.company_interests.each do |company| %>
  <li><a href="/company_interests/<%=company.id%>"><%= company.name %></a>
       <p style="float:right;">  <% if company.applied %>
-      <i> <%= "Yes" %></i>  
+      <i><%= "Yes" %></i>  
           <% else %>
       <i><%= "Not yet" %></i>  
           <% end %> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p> 

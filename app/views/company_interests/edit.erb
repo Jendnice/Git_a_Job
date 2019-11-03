@@ -3,25 +3,25 @@
   <form action="/company_interests/<%=@company.id%>" method="POST">
     <input id="hidden" type="hidden" name="_method" value="patch">
     <br />
-    <label>Edit the company's name:</label>
-    <br />
-    <br />
-    <input type="text" name="company_interest[name]" id= "company_interest_name" value="<%= @company.name %>">
-    <br />
-    <br />
-    <label>Edit the company's description:</label>
-    <br />
-    <br />
-    <input type="text" name="company_interest[description]" id= "company_interest_description" value="<%= @company.description %>">
-    <br />
-    <br />
-    <br />
+     <label>Edit the company's name:</label>
+     <br />
+     <br />
+     <input type="text" name="company_interest[name]" id= "company_interest_name" value="<%= @company.name %>">
+     <br />
+     <br />
+     <label>Edit the company's description:</label>
+     <br />
+     <br />
+     <input type="text" name="company_interest[description]" id= "company_interest_description" value="<%= @company.description %>">
+     <br />
+     <br />
+     <br />
     <h4>Applied?</h4>
-    <br />
+     <br />
 &nbsp; &nbsp; <input type="radio" name="company_interest[applied]" value="true"> Crushed it!<br />
 <br />
 &nbsp; &nbsp; <input type="radio" name="company_interest[applied]" value="false"> Not yet, but I'm on it asap!<br />
-  <br />
-  <br />
+     <br />
+     <br />
     <input type="submit" value="Update Company">
   </form>
