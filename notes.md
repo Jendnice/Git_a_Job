@@ -21,17 +21,13 @@ Views:
     -Company_Interests
        -index, show, edit, new 
     -Users 
-       -login, new, show (?)
-    -Index (?)
+       -login, new
+    -Failure
     -Layout 
+    -Opening page
     
 TO DOs:
 
-  2. README
-      a. Application (short) Description
-      b. Installation Guide
-      c. Contribution Guide
-      d. Link to the License for your code/License Statement (link to MIT licensing)
   3. Walkthrough video (approx. 10 minutes)
   4. Blog post ("Models, Controllers, and Views - Oh, My!")
   5. SCHEDULE your project review!
@@ -48,8 +44,6 @@ TO DOs:
   
 
        
-  
-  
   
   Ideal Company listing:
      1. Company name
