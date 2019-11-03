@@ -48,8 +48,7 @@ TO DOs:
   
 
 
-  
-  -Error messages. See your notes and try to implement based on that. (Might still use failure.erb for some and error messages for others? See how it goes.)
+
   
   -Above notes, too! (README, etc.)
   

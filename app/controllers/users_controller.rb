@@ -2,9 +2,9 @@ class UsersController < ApplicationController
   
   get "/users" do 
     if !session[:user_id]
-      erb :'users/new'
+      redirect to '/'
     else 
-      redirect to '/users/login'
+      redirect to '/company_interests'
     end 
   end 
 

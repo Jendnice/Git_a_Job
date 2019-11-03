@@ -10,7 +10,11 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-    erb :opening_page 
+    if !session[:user_id]
+      erb :opening_page
+    else 
+      redirect to '/company_interests'
+    end 
   end
   
   get "/failure" do
