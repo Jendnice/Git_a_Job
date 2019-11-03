@@ -1,13 +1,10 @@
-<!--Overall Company_Interests index (just names in ordered list of companies)-->
-
 <h1><i>Hi, <%=@user.username%>!</i></h1>
-<br>
+<br />
   <img src="https://images.unsplash.com/photo-1511802684173-b35d634c5599?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" style="float:right;width:335px;height:275px;">
 <h2>Here are the companies you're interested in...</h2>
-
 <h4 style="float:right;"><u>Applied?</u> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </h4>
-<br>
-<br>
+<br />
+<br />
 <ul>
 <% @user.company_interests.each do |company| %>
  <li><a href="/company_interests/<%=company.id%>"><%= company.name %></a>
@@ -20,10 +17,10 @@
   <br />
 <% end %>
 </ul>
-<br>
-<br>
-<br>
-<br>
-<br>
+<br />
+<br />
+<br />
+<br />
+<br />
  <a href="/company_interests/new" style="float:left;"><i>Add New Company</i></a>
-<br>
+<br />

@@ -2,26 +2,26 @@
   <img src="https://images.unsplash.com/photo-1517649281203-dad836b4abe5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" style="float:right;width:350px;height:260px;">
   <form action="/company_interests/<%=@company.id%>" method="POST">
     <input id="hidden" type="hidden" name="_method" value="patch">
-    <br>
+    <br />
     <label>Edit the company's name:</label>
-    <br>
-    <br>
+    <br />
+    <br />
     <input type="text" name="company_interest[name]" id= "company_interest_name" value="<%= @company.name %>">
-    <br>
-    <br>
+    <br />
+    <br />
     <label>Edit the company's description:</label>
-    <br>
-    <br>
+    <br />
+    <br />
     <input type="text" name="company_interest[description]" id= "company_interest_description" value="<%= @company.description %>">
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
     <h4>Applied?</h4>
-    <br>
-&nbsp; &nbsp; <input type="radio" name="company_interest[applied]" value="true"> Crushed it!<br>
-<br>
-&nbsp; &nbsp; <input type="radio" name="company_interest[applied]" value="false"> Not yet, but I'm on it asap!<br>
-  <br>
-  <br>
+    <br />
+&nbsp; &nbsp; <input type="radio" name="company_interest[applied]" value="true"> Crushed it!<br />
+<br />
+&nbsp; &nbsp; <input type="radio" name="company_interest[applied]" value="false"> Not yet, but I'm on it asap!<br />
+  <br />
+  <br />
     <input type="submit" value="Update Company">
   </form>
