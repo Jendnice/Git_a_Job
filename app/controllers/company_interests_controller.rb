@@ -51,6 +51,7 @@ class CompanyInterestsController < ApplicationController
      if @company.user == current_user
         @company.name = params[:company_interest][:name]
         @company.description = params[:company_interest][:description]
+        @company.applied = params[:company_interest][:applied]
         @company.save
         redirect to "/company_interests/#{@company.id}"
      else 

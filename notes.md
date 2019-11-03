@@ -54,6 +54,8 @@ TO DOs:
   
   -Error messages. See your notes and try to implement based on that. (Might still use failure.erb for some and error messages for others? See how it goes.)
   
+  -Update list html <ul> in index file to list it how you want. (Or remove it if not necessary.)
+  
   -Above notes, too! (README, etc.)
   
   -Update design (see above for notes)

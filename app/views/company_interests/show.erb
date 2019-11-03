@@ -7,9 +7,11 @@
   <br>
   <h4>Applied?</h4>
   <br>
-&nbsp; &nbsp; <input type="radio" name="application" value="high"> Crushed it!<br>
-<br>
-&nbsp; &nbsp; <input type="radio" name="application" value="medium"> Not yet, but I'm on it asap!<br>
+  <% if @company.applied %>
+      <%= "Crushed it!" %>
+  <% else %>
+      <%= "Not yet, but I'm on it asap!" %>
+  <% end %>
   <br>
   <br>
   <a href="/company_interests/<%=@company.id%>/edit">Edit</a>
