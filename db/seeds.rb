@@ -1,12 +1,12 @@
-# Add seed data here. Seed your database with `rake db:seed`
+# Seed your database with `rake db:seed`
 
-sophie = User.create(username: "Sophie", password: "sophie_password")
-flatiron = CompanyInterest.new(name: "Flatiron", description: "tech school/bootcamp")
-flatiron.user = sophie
+ted = User.create(username: "Ted", password: "ted_password")
+flatiron = CompanyInterest.new(name: "Flatiron", description: "tech school/bootcamp", applied: true)
+flatiron.user = ted
 flatiron.save
-sophie.company_interests << flatiron 
-sophie.save 
+ted.company_interests << flatiron 
+ted.save 
 
-corinna = User.create(username: "Corinna", password: "corinna_password")
-CompanyInterest.create(name: "TN_Tech_Company", description: "IT company, Front End Development role", user: corinna) 
+cassie = User.create(username: "Cassie", password: "cassie_password", applied: false)
+CompanyInterest.create(name: "All Things Tech", description: "IT company, full stack role", user: cassie) 
 
