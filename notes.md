@@ -47,12 +47,9 @@ TO DOs:
   
   
 
-  
-  -Update layout to include message and/or links that you want throughout. (Logout link, etc.) Can then abstract this out from the individual view files so it's held in one place and only shown when user is logged in. (Could do other conditionals here if it makes sense, too. Ex. If logged out, if logged in, etc. Don't get too crazy with it, though!) See Corinna's layout file for how she did it.
+
   
   -Error messages. See your notes and try to implement based on that. (Might still use failure.erb for some and error messages for others? See how it goes.)
-  
-  -Update list html <ul> in index file to list it how you want. (Or remove it if not necessary.)
   
   -Above notes, too! (README, etc.)
   
