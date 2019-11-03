@@ -20,7 +20,7 @@ Everything should be all set up and you'll be on your way!
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Jendnice/Git_a_Job. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct. Please read [CONTRIBUTING.md](https://github.com/Jendnice/Git_a_Job/CONTRIBUTING.md) for details.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Jendnice/Git_a_Job. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct. Please read [CONTRIBUTING.md](https://github.com/Jendnice/Git_a_Job/blob/master/CONTRIBUTING.md) for details.
 
 ## License
 
