@@ -26,36 +26,31 @@ Views:
     -Layout 
     
 TO DOs:
-  1. Blog post ("Models, Controllers, and Views - Oh, My!")
-  2. Walkthrough video (approx. 10 minutes)
-  3. Clean up code (refactor, clean up ruby methods, abstract out if needed, clean up HTML? Esp. spacing at bottom and lining up or correctly staggering breaks and each new line of code.)
-  4. SCHEDULE your project review!
-
-  6. README
+  1. Clean up code (refactor, clean up ruby methods, abstract out if needed, clean up HTML? Esp. spacing at bottom and lining up or correctly staggering breaks and each new line of code.)
+     a. Re-read back through every file and delete any unnecessary comments (and refactor and clean up if/as needed)
+  2. README
       a. Application (short) Description
       b. Installation Guide
       c. Contribution Guide
       d. Link to the License for your code/License Statement (link to MIT licensing)
-  7. Additional bonus:
-       a. more advanced formatting (putting companies in index in a list; updating heading tags, line breaks, etc.; more advanced or different options for submitting; updating the layout and color scheme, change description to "text" instead of "string", add timestamps to your databases, format links on the bottom of the page to go horizontal instead of all stacked vertical)
-       b. add in more options for companies (company url, location, applied - Y/N, notes, etc.)
-  8. Re-read back through every file and delete any unnecessary comments (and refactor and clean up if/as needed)
+  3. Walkthrough video (approx. 10 minutes)
+  3. Blog post ("Models, Controllers, and Views - Oh, My!")
+  4. SCHEDULE your project review!
   9. Delete unnecessary files from project (notes, links, corneal welcome, etc.)
   10. Update spec.md file per instructions on project page 
   11. See everything else on project page
   12. Add/adjust any other notes from your notebook.
+  13. Move notes file to Slack or Wordpad
+  14. Finalize and submit everything
+  15. Prep for project review (see notebook notes)
   
   
 
 
-
-  
-  -Above notes, too! (README, etc.)
   
   -Update design/formatting (see above for notes)
-      -Check the files you've update and redo some of the formatting (spacing out some stuff, etc.)
+      -Check the files you've updated and redo some of the formatting (spacing out some stuff, etc.)
       -Update language and wording as part of updating design. (Opening description, labels for login, signup, etc.) Make it personal.:)
-      -Maybe update logout so it says goodbye instead of the repeat for login?
       -Maybe italicize the description area of company pages and tab it in so it stands out a bit?
        
   
@@ -72,6 +67,8 @@ TO DOs:
   -Add timestamps to your company_interests db, format links on the bottom of the page to go horizontal instead of all stacked vertical
        b. add in more options for companies (company url, location, notes, etc.)
   -Change company description to "text" instead of "string" - (The prepped but deleted rakefile is in Git. Or can check bookmark for formatting. It'll probably be "change_column" and do with up and down instead of just change, since column change can't be rolled back.) Decide if you want to do that with the description or if you'd rather break it down another way. (Separate columns added for location, add'l info, etc.) Remember to update elsewhere for any columns you update or add.
+  -More advanced formatting (putting companies in index in a list; updating heading tags, line breaks, etc.; more advanced or different options for submitting; updating the layout and color scheme, change description to "text" instead of "string", add timestamps to your databases, add in more options for companies (company url, location, notes, etc.)
+  -Maybe update logout so it says goodbye instead of the repeat for login?
      
       
   
