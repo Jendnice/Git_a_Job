@@ -34,24 +34,20 @@ TO DOs:
       c. Contribution Guide
       d. Link to the License for your code/License Statement (link to MIT licensing)
   3. Walkthrough video (approx. 10 minutes)
-  3. Blog post ("Models, Controllers, and Views - Oh, My!")
-  4. SCHEDULE your project review!
-  9. Delete unnecessary files from project (notes, links, corneal welcome, etc.)
-  10. Update spec.md file per instructions on project page 
-  11. See everything else on project page
-  12. Add/adjust any other notes from your notebook.
-  13. Move notes file to Slack or Wordpad
-  14. Finalize and submit everything
-  15. Prep for project review (see notebook notes)
-  
+  4. Blog post ("Models, Controllers, and Views - Oh, My!")
+  5. SCHEDULE your project review!
+  6. Delete unnecessary files from project (notes, links, corneal welcome, etc.)
+  7. Update spec.md file per instructions on project page 
+  8. See everything else on project page
+  9. Add/adjust any other notes from your notebook.
+  10. Move notes file to Slack or Wordpad
+  11. Final check of everything on site (check links etc.) Show Keith. <3
+       a. Make sure you have plenty of saved data for your walkthrough, etc. (Can work on this as part of checking everything, too.)
+  12. Finalize and submit everything
+  13. Prep for project review (see notebook notes)
+  14. Maybe schedule time with Corinna and/or Katie
   
 
-
-  
-  -Update design/formatting (see above for notes)
-      -Check the files you've updated and redo some of the formatting (spacing out some stuff, etc.)
-      -Update language and wording as part of updating design. (Opening description, labels for login, signup, etc.) Make it personal.:)
-      -Maybe italicize the description area of company pages and tab it in so it stands out a bit?
        
   
   

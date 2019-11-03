@@ -2,16 +2,18 @@
 
 <h2><%=@company.name%></h2>
   <img src="https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="float:right;width:375px;height:275px;">
-  <h3><%=@company.description%></h3>
+  <h3> &nbsp; &nbsp; &nbsp; &nbsp; <i><%=@company.description%></i></h3>
   <br>
   <br>
   <h4>Applied?</h4>
-  <br>
+  <br> &nbsp; &nbsp; 
   <% if @company.applied %>
       <%= "Crushed it!" %>
   <% else %>
       <%= "Not yet, but I'm on it asap!" %>
   <% end %>
+  <br>
+  <br>
   <br>
   <br>
   <a href="/company_interests/<%=@company.id%>/edit">Edit</a>
@@ -22,5 +24,3 @@
   <input type="hidden" id="hidden" name="_method" value="DELETE" />
  <br> <input type="submit" value="Delete" />
 </form>
-<br>
-<br>
