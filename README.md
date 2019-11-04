@@ -10,10 +10,16 @@ To use this app: clone it. Then run:
 bundle install
 ```
 
-Then run:
+Next, run:
 
 ```
 rake db:migrate
+```
+
+And finally, run:
+
+```
+shotgun
 ```
 
 Everything should be all set up and you'll be on your way!
