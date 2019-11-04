@@ -30,8 +30,7 @@ TO DOs:
 
   3. Walkthrough video (approx. 10 minutes)
   4. Blog post ("Models, Controllers, and Views - Oh, My!")
-  5. SCHEDULE your project review!
-  6. Delete unnecessary files from project (notes, links, corneal welcome, etc.)
+  
   7. Update spec.md file per instructions on project page 
   8. See everything else on project page
   9. Add/adjust any other notes from your notebook.
