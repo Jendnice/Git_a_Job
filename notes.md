@@ -31,7 +31,7 @@ TO DOs:
   3. Walkthrough video (approx. 10 minutes)
   4. Blog post ("Models, Controllers, and Views - Oh, My!")
   
-  7. Update spec.md file per instructions on project page 
+  7. Update spec.md file (already in here) per instructions on project page (x off and explain how you've met the requirement)
   8. See everything else on project page
   9. Add/adjust any other notes from your notebook.
   10. Move notes file to Slack or Wordpad
