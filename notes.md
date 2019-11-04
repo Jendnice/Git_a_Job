@@ -28,7 +28,7 @@ Views:
     
 TO DOs:
 
-  4. Blog post ("Models, Controllers, and Views - Oh, My!")
+  4. Blog post ("Models, Controllers, and Views - Oh, My!") - https://jendnice.github.io/models_and_controllers_and_views_oh_my
   5. Publish video link to youtube like last time, and pull link
   
   9. Move notes file to Slack or Wordpad
