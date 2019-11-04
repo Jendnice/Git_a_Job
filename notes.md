@@ -28,12 +28,13 @@ Views:
     
 TO DOs:
 
-  4. Blog post ("Models, Controllers, and Views - Oh, My!") - https://jendnice.github.io/models_and_controllers_and_views_oh_my
-  5. Publish video link to youtube like last time, and pull link
+  Blog post - https://jendnice.github.io/models_and_controllers_and_views_oh_my
+  Youtube - https://youtu.be/m_xuRixFLJw
+  Github - https://github.com/Jendnice/Git_a_Job
   
   9. Move notes file to Slack or Wordpad
  
-  11. Final check of everything on site (check links etc.) Show Keith. <3
+  11. Final check of everything on site (check links etc.) Check youtube link and make sure it's all set. (https://youtu.be/m_xuRixFLJw)
 
   12. Finalize and submit everything (Git repo link, blog link, walkthrough video link)
   
