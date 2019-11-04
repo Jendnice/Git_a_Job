@@ -28,16 +28,16 @@ Views:
     
 TO DOs:
 
-  3. Walkthrough video (approx. 10 minutes)
+  3. Walkthrough video (approx. 10 minutes), publish to youtube like last time, and pull link
   4. Blog post ("Models, Controllers, and Views - Oh, My!")
   
-  7. Update spec.md file (already in here) per instructions on project page (x off and explain how you've met the requirement)
+  7. Finish spec.md file (already in here) per instructions on project page (x off and explain how you've met the requirement) -- Reread what you already wrote and make sure it's all good! Then reread each bullet and x the rest of it off.
   8. See everything else on project page
   9. Add/adjust any other notes from your notebook.
   10. Move notes file to Slack or Wordpad
   11. Final check of everything on site (check links etc.) Show Keith. <3
        a. Make sure you have plenty of saved data for your walkthrough, etc. (Can work on this as part of checking everything, too.)
-  12. Finalize and submit everything
+  12. Finalize and submit everything (Git repo link, blog link, walkthrough video link)
   13. Prep for project review (see notebook notes)
   14. Maybe schedule time with Corinna and/or Katie
   
