@@ -12,6 +12,8 @@ gem 'pry'
 gem 'bcrypt'
 gem 'tux'
 
+gem "rack", ">= 2.0.8"
+
 group :test do
   gem 'rspec'
   gem 'capybara'
